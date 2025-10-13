@@ -9,5 +9,5 @@ WHERE od.OrderID = 10250
 -- by a comm
 
 SELECT supplierid, companyname, contactname, phone + ',' + fax
-as phoneAndfax
+AS phoneAndfax
 FROM Suppliers s

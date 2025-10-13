@@ -1,22 +1,18 @@
-use northwind
--- example
-select lastname, firstname, title, employeeid from Employees
-
 -- 1. Select the names and addresses of all customers
-select contactname, address, country, city from Customers c
+SELECT contactname, address, country, city FROM Customers c
 
 
 -- 2. Select the last names and phone numbers of employees
-select lastname, homephone from Employees e
+SELECT lastname, homephone FROM Employees e
 
 
 -- 3. Select the names and prices of products
-select productname, unitprice from Products p
+SELECT productname, unitprice FROM Products p
 
 
 -- 4. Show all product categories (names and descriptions)
-select categoryname, description from Categories c
+SELECT categoryname, description FROM Categories c
 
 
 -- 5. Show the names and website addresses of suppliers
-select companyname, homepage from Suppliers s
+SELECT companyname, homepage FROM Suppliers s
