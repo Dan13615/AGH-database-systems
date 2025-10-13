@@ -1,0 +1,2 @@
+SELECT orderid, orderdate, customerid 
+FROM Orders o WHERE o.ShipCountry = 'Argentina'
