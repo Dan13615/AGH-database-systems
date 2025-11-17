@@ -25,7 +25,13 @@ WHERE p.Quantityperunit LIKE '%bottle%'
 
 --4. List information about all products priced above the average.
 
-
+SELECT * FROM Products p 
+WHERE p.UnitPrice > (SELECT AVG(UnitPrice) FROM Products p2)
 
 
 --5. Provide the total value of the order with order number 10250.
+
+SELECT ROUND(SUM(UnitPrice * Quantity * (1 - Discount)), 2) AS TotalValue 
+FROM [Order Details] od 
+WHERE od.OrderID = 10250
+
